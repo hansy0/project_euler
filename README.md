@@ -1,2 +1,2 @@
-# project_oiler
-project oiler #1~20
+# project_euler
+project euler #1~20
