@@ -19,15 +19,15 @@ def get_prime_factors(N):  #소인수분해
 
 def get_lcm(N):     #1~N까지의 최소공배수구하기
     dict ={}
-    list = []
+    num = []
     for x in range(1, N+1):
         dict[x] = get_prime_factors(x)
-        list+=get_prime_factors(x)
+        num+=get_prime_factors(x)
     
-    list = set(list)
+    num = set(num)
     dict2={}
 
-    for y in list : 
+    for y in num : 
         dict2[y] =  max(dict[x].count(y) for x in range(1,N+1))
 
     answer=1

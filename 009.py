@@ -1,13 +1,13 @@
 #007
 
 def find_sum(N):
-    list = []
+    sum = []
     for i in range(1,N):
         for j in range(i+1, N):
             for k in range(j+1, N):
                 if i+j+k == N:
-                    list.append([i,j,k])
-    return list
+                    sum.append([i,j,k])
+    return sum
 
 def solution(N):
     abc = find_sum(N)
