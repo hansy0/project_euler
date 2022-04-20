@@ -2,7 +2,7 @@
 # 가장 큰 소인수 구하기
 
 # 소인수  
-def factor_generator(N):
+def prime_factor_generator(N):
     i = 2
     while N != 1:
         if N%i ==0:
@@ -11,8 +11,7 @@ def factor_generator(N):
         i +=1
         
 
-
-result = max(x for x in list(factor_generator(600851475143)))
+result = max(prime_factor_generator(600851475143))
 print(result)
 
 
@@ -36,3 +35,6 @@ print(result)
 #solution(600851475143)
 #---------------------
 # answer = 6857
+
+g = prime_factor_generator(9797)
+list(g)
