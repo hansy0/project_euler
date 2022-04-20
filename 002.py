@@ -8,7 +8,7 @@ def fibonacci(N):
         yield i 
         i, j = i+j , i
 
-result = sum(x for x in list(fibonacci(4000000)) if x%2 ==0)
+result = sum(x for x in fibonacci(4000000) if x%2 ==0)
 print(result)
 
 
