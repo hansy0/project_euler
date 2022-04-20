@@ -1,4 +1,5 @@
-#002 4백만 이하 짝수 값을 갖는 항의 합
+#002 
+# 4백만 이하 짝수 값을 갖는 피보나치항의 합
 
 def fibonacci(N):
     i = 1 #피보나치수
@@ -7,7 +8,7 @@ def fibonacci(N):
         yield i 
         i, j = i+j , i
 
-result = sum([x for x in list(fibonacci(4000000)) if x%2 ==0])
+result = sum(x for x in list(fibonacci(4000000)) if x%2 ==0)
 print(result)
 
 
