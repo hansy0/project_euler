@@ -36,5 +36,3 @@ print(result)
 #---------------------
 # answer = 6857
 
-g = prime_factor_generator(9797)
-list(g)
